@@ -31,10 +31,6 @@ export const App: React.FC = () => {
       setClockName(getRandomName());
     }, 3300));
 
-    // const timerId = window.setInterval(() => {
-    //   setClockName(getRandomName());
-    // }, 3300);
-
     return () => {
       window.clearInterval(timerId);
       document.removeEventListener('contextmenu', contectmenuHandler);
